@@ -1,0 +1,16 @@
+[package]
+name = "plugin"
+version = "0.1.0"
+edition = "2021"
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+async-ffi = "0.4"
+safer-ffi = "0.0.7"
+
+tokio = {version ="1.18", features =["rt", "time", "macros", "sync"]}
+lazy_static = "1.4.0"
