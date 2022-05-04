@@ -1,6 +1,7 @@
-## Проброс tokio runtime в подключаемые плагины
+## Export tokio runtime to dynamic libraries
 
-Для запуска:
+Run:
 
-1. установите [just](https://crates.io/crates/just)
-2. выполните`$ just run`
+```sh
+$ cargo run
+```

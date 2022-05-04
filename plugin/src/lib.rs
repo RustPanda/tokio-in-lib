@@ -10,7 +10,7 @@ pub unsafe extern "C" fn test(arg: f32, handle: *const Handle) -> FfiFuture<safe
         let _enter = handle.enter();
         tokio::time::sleep(std::time::Duration::from_secs_f32(arg)).await;
 
-        "hello".to_string().into()
+        format!("slept {arg} secs").into()
     }
     .into_ffi()
 }
