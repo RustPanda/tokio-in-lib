@@ -1,0 +1,17 @@
+[package]
+name = "plugin-http-clinet"
+version = "0.1.0"
+edition = "2021"
+
+
+[lib]
+crate-type = ["cdylib"]
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+http-client = {version = "6.5.1", features = ["native_client"]}
+
+async-ffi = "0.4"
+safer-ffi = "0.0.7"
+async-std = "1.11.0"
